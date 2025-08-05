@@ -88,9 +88,6 @@ npx playwright show-report
 ├── tests-examples/
 │   └── demo-todo-app.spec.ts         # Example test file
 ├── playwright.config.ts              # Playwright configuration
-├── .github/
-│   └── workflows/
-│       └── playwright.yml            # GitHub Actions workflow
 └── package.json                      # Project dependencies
 ```
 
