@@ -2,17 +2,20 @@
   "name": "dotcom-screen-testing",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:update": "playwright test --update-snapshots",
+    "test:report": "playwright show-report",
+    "test:env": "node --env-file=.env ./node_modules/.bin/playwright test"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.54.2",
-    "@types/dotenv": "^6.1.1",
     "@types/node": "^24.2.0"
-  },
-  "dependencies": {
-    "dotenv": "^17.2.1"
   }
 }
