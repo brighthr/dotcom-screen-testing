@@ -21,17 +21,20 @@ This project contains automated visual tests that capture screenshots of key pag
 ## Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/brighthr/dotcom-screen-testing.git
 cd dotcom-screen-testing
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Install Playwright browsers:
+
 ```bash
 npx playwright install
 ```
@@ -39,26 +42,31 @@ npx playwright install
 ## Running Tests
 
 ### Run all tests
+
 ```bash
 npx playwright test
 ```
 
 ### Run tests in headed mode (see browser)
+
 ```bash
 npx playwright test --headed
 ```
 
 ### Run specific test
+
 ```bash
 npx playwright test homepage.spec.ts
 ```
 
 ### Run tests with a specific tag
+
 ```bash
 npx playwright test --grep "@homepage"
 ```
 
 ### Update screenshots (when visual changes are intended)
+
 ```bash
 npx playwright test --update-snapshots
 ```
@@ -66,6 +74,7 @@ npx playwright test --update-snapshots
 ## Test Reports
 
 After running tests, you can view the HTML report:
+
 ```bash
 npx playwright show-report
 ```
@@ -106,10 +115,12 @@ BASE_URL=https://www.brighthr.com
 ## GitHub Actions
 
 Tests automatically run on:
+
 - Push to main branch
 - Pull requests to main branch
 
 The workflow includes:
+
 - Multi-browser test execution
 - Screenshot artifact upload on failures
 - Test report generation
@@ -133,25 +144,31 @@ test("page visual test", async ({ page }) => {
 test("interactive visual test", async ({ page }) => {
   await page.goto("https://www.brighthr.com/");
   await page.getByRole("button", { name: "Accept all" }).click();
-  await expect(page).toHaveScreenshot("after-interaction.png", { fullPage: true });
+  await expect(page).toHaveScreenshot("after-interaction.png", {
+    fullPage: true,
+  });
 });
 ```
 
 ## Troubleshooting
 
 ### Screenshot Differences
+
 If tests fail due to screenshot differences:
+
 1. Review the diff images in the test report
 2. If changes are expected, update snapshots with `--update-snapshots`
 3. If unexpected, investigate the visual regression
 
 ### Browser Installation Issues
+
 ```bash
 # Reinstall browsers
 npx playwright install --force
 ```
 
 ### Flaky Tests
+
 - Check for animations or dynamic content
 - Add appropriate wait conditions
 - Consider using `waitForLoadState('networkidle')`
@@ -166,6 +183,7 @@ npx playwright install --force
 ## Tags
 
 Tests are organized with tags for easier filtering:
+
 - `@homepage` - Homepage related tests
 - Add more tags as needed for different page types
 
