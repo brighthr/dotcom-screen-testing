@@ -10,6 +10,7 @@ const featurePages = [
   "employee-recognition-platform",
   "payroll-navigator",
   "redundancy-navigator",
+  "hr-insurance",
 ];
 
 featurePages.forEach((feature) => {
