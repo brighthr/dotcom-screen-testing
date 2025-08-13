@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "@chromatic-com/playwright";
 
 test(`health and safety menu visual test | @healthAndSafetyMenu`, async ({ page }, testInfo) => {
   test.skip(

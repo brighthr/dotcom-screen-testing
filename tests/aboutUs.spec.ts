@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect } from "@chromatic-com/playwright";
 
 test(`resource page visual test | @aboutUs`, async ({ page }) => {
   await page.goto("/about-us");
