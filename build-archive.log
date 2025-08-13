@@ -1,21 +1,21 @@
 [1m@storybook/core v8.5.8
 [22m
-info => Cleaning outputDir: [36m../../../../../var/folders/gp/dx31ngcn25z2qq7r8hr112k80000gp/T/chromatic--74854-XR1NXC68q9MG[39m
+info => Cleaning outputDir: [36m../../../../../var/folders/gp/dx31ngcn25z2qq7r8hr112k80000gp/T/chromatic--97956-45jrGp2BmcGH[39m
 info => Loading presets
 info => Building manager..
 WARN unable to find package.json for @chromatic-com/shared-e2e
 WARN unable to find package.json for @rrweb/types
 WARN unable to find package.json for @storybook/types
 WARN unable to find package.json for express
-info => Manager built ([38;2;181;126;229m59 ms[39m)
+info => Manager built ([38;2;181;126;229m300 ms[39m)
 info => Building preview..
 info Addon-docs: using MDX3
 info => Using implicit CSS loaders
 info => Using default Webpack5 setup
-info => Copying static files: [36mtest-results/chromatic-archives/archive[39m at [36m../../../../../var/folders/gp/dx31ngcn25z2qq7r8hr112k80000gp/T/chromatic--74854-XR1NXC68q9MG[39m
+info => Copying static files: [36mtest-results/chromatic-archives/archive[39m at [36m../../../../../var/folders/gp/dx31ngcn25z2qq7r8hr112k80000gp/T/chromatic--97956-45jrGp2BmcGH[39m
 WARN asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
 WARN This can impact web performance.
 WARN Assets: 
 WARN   642.6533ae12.iframe.bundle.js (1.33 MiB)
-info => Preview built ([38;2;181;126;229m2.95 s[39m)
-info => Output directory: /var/folders/gp/dx31ngcn25z2qq7r8hr112k80000gp/T/chromatic--74854-XR1NXC68q9MG
+info => Preview built ([38;2;181;126;229m2.79 s[39m)
+info => Output directory: /var/folders/gp/dx31ngcn25z2qq7r8hr112k80000gp/T/chromatic--97956-45jrGp2BmcGH
