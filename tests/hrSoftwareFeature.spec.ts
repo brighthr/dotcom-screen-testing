@@ -11,6 +11,7 @@ const featurePages = [
   "payroll-navigator",
   "redundancy-navigator",
   "hr-insurance",
+  "brightlearn",
 ];
 
 featurePages.forEach((feature) => {
