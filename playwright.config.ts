@@ -1,5 +1,14 @@
 import { defineConfig, devices } from "@playwright/test";
 
+import dotenv from "dotenv";
+
+import findConfig from "find-config";
+
+dotenv.config({
+  path: findConfig(".env") as string | string[] | URL | undefined,
+  quiet: true,
+});
+
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
@@ -18,7 +27,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: process.env.BASE_URL || "https://www.brighthr.com",
+    baseURL: process.env.BASE_URL,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
