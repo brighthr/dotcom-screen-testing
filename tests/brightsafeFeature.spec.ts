@@ -9,6 +9,9 @@ const featurePages = [
   "health-and-safety-insurance",
   "health-and-safety-elearning",
   "brightlearn-health-and-safety",
+  "care-navigator",
+  "education-navigator",
+  "food-management-safety-system",
 ];
 
 featurePages.forEach((feature) => {
